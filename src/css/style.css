@@ -1,18 +1,29 @@
-body {
+:root{
+  --cor0: #fff;
+  --cor1: #acc8d7;
+  --cor2: #608334;
+  --cor3: #97b770;
+  --cor4: #365563;
+  --cor5: #1c1c1c;
+  --cor6: #000000;
+ }
+
+
+ body {
   font-family: nunito, sans-serif;
-  color: #1c1c1c;
+  color: var(--cor5);
 }
 h1,
 h2,
 h3 {
   font-family: asap, sans-serif;
-  color: #000000;
+  color: var(--cor6);
 }
 .botao {
-  color: #ffffff;
+  color: var(--cor0);
   text-decoration: none;
   padding: 10px 30px;
-  background-color: #191970;
+  background-color: var(--cor4);
   font-size: 0.9em;
   border-radius: 3px;
 }
@@ -21,11 +32,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #191970;
+  background-color: var(--cor3);
 }
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor0);
   font-weight: 800;
   font-size: 16px;
   font-family: yeloowtail, sans-serif;
@@ -41,15 +52,23 @@ nav ul {
 }
 nav ul li {
   text-align: center;
-  width: 100%;
+  width: 30%;
+
 }
 nav ul li a {
   display: inline-block;
   padding: 10px 0;
   width: 100%;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor0);
+  
 }
+nav > ul li a:hover {
+  background-color: var(--cor1);
+  color: var(--cor2);
+  height: 100%;
+  text-align: center;
+  }
 
 .slider {
   display: flex;
@@ -58,13 +77,13 @@ nav ul li a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
+  color: var(--cor0);
   text-align: center;
   padding: 15px;
 }
 
 header h1 {
-  color: #ffffff;
+  color: var(--cor0);
 }
 header p {
   margin-bottom: 2em;
@@ -76,20 +95,20 @@ header p {
   align-items: center;
   text-align: center;
   padding: 10px 10px 20px 20px;
-  background-color: #191970;
-  color: #ffffff;
+  background-color: var(--cor4);
+  color: var(--cor0);
 }
 
 #sobre h2 {
-  color: #ffffff;
+  color: var(--cor0);
 }
 #sobre p {
   margin-bottom: 2.5em;
   max-width: 1000px;
 }
 #sobre.botao {
-  background-color: #f1f1f1;
-  color: #1c1c1c;
+  background-color: var(--cor0);
+  color: var(--cor5);
 }
 #Oportunidades {
   display: flex;
@@ -126,19 +145,19 @@ header p {
   padding: 20px;
 }
 #contato h2 {
-  color: #000000;
+  color: var(--cor6);
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #191970;
-  color: #ffffff;
+  background-color: var(--cor4);
+  color: var(--cor0);
 }
 
 footer a {
   text-decoration: none;
-  color: #00ffff;
+  color: var(--cor0);
 }
 
 @media screen and (min-width: 768px) {
