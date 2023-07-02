@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFBA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="src/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-    <script src="js/index.js" defer></script>
   </head>
   <body>
     <nav>
@@ -25,21 +18,52 @@
         ><img
           src="https://ihac.ufba.br/wp-content/uploads/2017/07/logo-site-ihac10.png"
           alt="logo_ihac"
-        />
-      </a>
+      /></a>
       <ul>
-        <li>
-          <a href="#sobre">BICT</a>
-        </li>
-        <li><a href="#Oportunidades">Oportunidades</a></li>
+        <li><a href="#sobre">BICT</a></li>
+        <li><a href="#oportunidades">Oportunidades</a></li>
         <li><a href="#grade">Grade Curricular</a></li>
-        <li><a href="#contato">contato</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div class="slider" id="topo"></div>
+
+    <header>
+      <div class="slider">
+        <div class="slide active">
+          <img src="src/assets/img/oBiCt.jpeg" alt="Slide 1" />
+        </div>
+        <div class="slide">
+          <img src="src/assets/img/locais (1).png" alt="Slide 2" />
+        </div>
+        <div class="slide">
+          <img src="src/assets/img/locais (2).png" alt="Slide 3" />
+        </div>
+        <div class="slide">
+          <img src="src/assets/img/locais (3).png" alt="Slide 4" />
+        </div>
+        <div class="slide">
+          <img src="src/assets/img/oQueFazer.jpeg" alt="Slide 5" />
+        </div>
+        <div class="navigation">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="arrows">
+          <button class="prev" style="rotate: 180deg">
+            <img src="src/assets/img/flecha.png" alt="" />
+          </button>
+          <button class="next">
+            <img src="src/assets/img/flecha.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
 
     <section id="sobre">
-      Bacharelado Interdisciplinar em Ciência e Tecnologia
+      <h2>Bacharelado Interdisciplinar em Ciência e Tecnologia</h2>
       <p>
         O Bacharelado Interdisciplinar em Ciência e Tecnologia (BICT) é um curso
         que oferece uma formação ampla e multidisciplinar nas áreas de ciência e
@@ -49,44 +73,25 @@
         conhecimentos científicos e habilidades analíticas e selecionando
         disciplinas eletivas de acordo com seus interesses, essas disciplinas
         podem incluir engenharia, ciência da computação, biologia, química,
-        física, entre outras. <br />Este processo é projetado para promover a
+        física, entre outras. Este processo é projetado para promover a
         interdisciplinaridade, permitindo que os estudantes desenvolvam uma
         visão ampla e integrada das diferentes áreas de conhecimento tendo a
         oportunidade de aprofundar seus conhecimentos em uma área de
         especialização por meio de disciplinas eletivas avançadas, projetos de
-        pesquisa ou estágios em empresas e instituições de pesquisa.<br />
+        pesquisa ou estágios em empresas e instituições de pesquisa.
+      </p>
+      <p>
         O BICT permite que os estudantes desenvolvam habilidades específicas em
         sua área de interesse e se preparem para futuros estudos de
         pós-graduação ou ingresso no mercado de trabalho.
-        <br />
       </p>
     </section>
 
     <section id="Oportunidades">
       <h2>Oportunidades</h2>
       <div>
-        <img src="src/assets/img/c.png" alt=" exemplo1" />
-        <h3>exemplo 1</h3>
-        <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
-        </p>
-      </div>
-
-      <div>
-        <img src="src/assets/img/e.png" alt=" exemplo2" />
-        <h3>exemplo 2</h3>
-        <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
-        </p>
-      </div>
-
-      <div>
-        <img src="src/assets/img/b.png" alt=" exemplo3" />
-        <h3>exemplo 3</h3>
+        <img src="src/assets/img/c.png" alt="exemplo1" />
+        <h3>Exemplo 1</h3>
         <p>
           Informática é uma área de informação digital, que inclui os processos
           de recolha, armazenamento, processamento, transferência e difusão de
@@ -94,8 +99,26 @@
         </p>
       </div>
       <div>
-        <img src="src/assets/img/a.png" alt=" exemplo4" />
-        <h3>exemplo 4</h3>
+        <img src="src/assets/img/e.png" alt="exemplo2" />
+        <h3>Exemplo 2</h3>
+        <p>
+          Informática é uma área de informação digital, que inclui os processos
+          de recolha, armazenamento, processamento, transferência e difusão de
+          dados.
+        </p>
+      </div>
+      <div>
+        <img src="src/assets/img/b.png" alt="exemplo3" />
+        <h3>Exemplo 3</h3>
+        <p>
+          Informática é uma área de informação digital, que inclui os processos
+          de recolha, armazenamento, processamento, transferência e difusão de
+          dados.
+        </p>
+      </div>
+      <div>
+        <img src="src/assets/img/a.png" alt="exemplo4" />
+        <h3>Exemplo 4</h3>
         <p>
           Informática é uma área de informação digital, que inclui os processos
           de recolha, armazenamento, processamento, transferência e difusão de
@@ -115,25 +138,26 @@
     </section>
 
     <section id="contato">
-      <h2>contato</h2>
-      <p>principais canais de cominicação</p>
-
+      <h2>Contato</h2>
+      <p>Principais canais de comunicação</p>
       <div>
         <img src="src/assets/img/d.png" alt="tel" />
-        <p><a href="tel:000000000">(71)0000-0000</a></p>
+        <p><a href="tel:000000000">(71) 0000-0000</a></p>
       </div>
-
       <div>
         <img src="src/assets/img/d.png" alt="email" />
         <p>
           Contratos e dúvidas com estágio:
-          <a href="estagio.ihac@gmail.com">estagio.ihac@gmail.com</a>
+          <a href="mailto:estagio.ihac@gmail.com">estagio.ihac@gmail.com</a>
         </p>
       </div>
     </section>
+
     <footer>
       <a href="#topo">VOLTAR</a>
-      <p>Desenvolvido por fulano de tal</p>
+      <p>Desenvolvido por Fulano de Tal</p>
     </footer>
+
+    <script src="src/js/script.js" defer></script>
   </body>
 </html>

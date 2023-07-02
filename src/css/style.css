@@ -1,4 +1,4 @@
-:root{
+:root {
   --cor0: #fff;
   --cor1: #acc8d7;
   --cor2: #608334;
@@ -6,10 +6,14 @@
   --cor4: #365563;
   --cor5: #1c1c1c;
   --cor6: #000000;
- }
+}
 
-
- body {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   font-family: nunito, sans-serif;
   color: var(--cor5);
 }
@@ -26,6 +30,84 @@ h3 {
   background-color: var(--cor4);
   font-size: 0.9em;
   border-radius: 3px;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  z-index: 1;
+}
+
+.slider {
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  object-fit: scale-down;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider .slide.active {
+  opacity: 1;
+}
+
+.slider .navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider .navigation span {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider .navigation span.active {
+  background: #333;
+}
+
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.slider .arrows button {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
 }
 
 nav {
@@ -53,7 +135,6 @@ nav ul {
 nav ul li {
   text-align: center;
   width: 30%;
-
 }
 nav ul li a {
   display: inline-block;
@@ -61,14 +142,13 @@ nav ul li a {
   width: 100%;
   text-decoration: none;
   color: var(--cor0);
-  
 }
 nav > ul li a:hover {
   background-color: var(--cor1);
   color: var(--cor2);
   height: 100%;
   text-align: center;
-  }
+}
 
 .slider {
   display: flex;
@@ -97,6 +177,7 @@ header p {
   padding: 10px 10px 20px 20px;
   background-color: var(--cor4);
   color: var(--cor0);
+  padding-top: 100px;
 }
 
 #sobre h2 {
@@ -169,11 +250,7 @@ footer a {
     flex-direction: row;
     width: 70%;
   }
-  header {
-    height: 600px;
-    height: 60vh;
-    justify-content: center;
-  }
+
   #sobre {
     height: 250px;
     height: 30vh;
