@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UFBA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="src/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    
   </head>
   <body>
     <nav>
@@ -14,16 +21,19 @@
           src="https://icti.ufba.br/sites/icti.ufba.br/files/brasao_icti.png"
           alt="logo_ufba"
       /></a>
-      <a href="https://ihac.ufba.br/pt/home/"
+      <a href="https://ihac.ufba.br/pt/home/" target="_blank" rel="external"
         ><img
           src="https://ihac.ufba.br/wp-content/uploads/2017/07/logo-site-ihac10.png"
           alt="logo_ihac"
-      /></a>
+        />
+      </a>
       <ul>
-        <li><a href="#sobre">BICT</a></li>
-        <li><a href="#oportunidades">Oportunidades</a></li>
+        <li>
+          <a href="#sobre">BICT</a>
+        </li>
+        <li><a href="#Oportunidades">Oportunidades</a></li>
         <li><a href="#grade">Grade Curricular</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato">contato</a></li>
       </ul>
     </nav>
 
@@ -90,74 +100,151 @@
     <section id="Oportunidades">
       <h2>Oportunidades</h2>
       <div>
-        <img src="src/assets/img/c.png" alt="exemplo1" />
-        <h3>Exemplo 1</h3>
+        <img src="src/assets/img/inter.png" alt=" Intercambio" />
+        <h3>Intercambio</h3>
         <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
+          A UFBA valorza a cooperação internacional como forma de enriquecer sua cultura e 
+          comunidade academica. Através da Assesoria internacional (AAI), a UFBA facilita a mobilidade acadêmica de seus estudantes e promove acordos de cooperação com instituições estrangeiras.
         </p>
-      </div>
+        
+                    <button id="openBtn">INTERCÂMBIO+</button>
+
+                    <dialog id="popupInter">
+                    <h1>Intercâmbio</h1>
+                    <p>A AAI, presente desde 1996, busca proporcionar experiências acadêmicas diferenciadas e promover cursos da UFBA a serem realizados em universidades no exterior. Em 2019, foram selecionados 155 estudantes de graduação para intercâmbios em países como Alemanha, Argentina, Canadá, Chile, Dinamarca, Espanha, França, Inglaterra, Itália e Portugal. Portugal recebeu o maior número de estudantes da UFBA, com destaque para a Universidade do Porto e a Universidade de Coimbra. Em relação aos estudantes estrangeiros recebidos pela UFBA, o total é de 67, com destaque para a Obafemi University da Nigéria e a Universidade do Porto. É importante mencionar que muitos estudantes estrangeiros vieram em busca de cursos nas áreas de Letras e Artes. Esses dados são disponibilizados pela Assessoria para Assuntos Internacionais da UFBA.</p>
+                    <button id="closeBtn">Fechar</button>
+                    </dialog>
+       </div>
+
       <div>
-        <img src="src/assets/img/e.png" alt="exemplo2" />
-        <h3>Exemplo 2</h3>
+        <img src="src/assets/img/idioma.png" alt=" PROFICI" />
+        <h3>Profici</h3>
         <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
+          O PROFICI é um programa da UFBA que oferece cursos gratuitos de idiomas
+         (espanhol, francês, inglês, italiano e português como língua estrangeira) para alunos de
+        graduação e pós-graduação, além de funcionários e professores. O objetivo é
+        promover a internacionalização da universidade. 
         </p>
+                    
+                      <button id="opBtn">PROFICI+</button>
+                      <dialog id="popupProfici">
+                        <h1>Profici</h1>
+                        <p>. A seleção ocorre semestralmente, com editais publicados no site do programa. Cada edição dura cerca de 1 ano e 6 meses e possui 6 componentes. É importante não reprovar em mais de um deles. Se o aluno for reprovado duas vezes, é jubilado para abrir vagas para novos alunos. É essencial não ter intervalos ou insucessos por mais de dois meses para ter sucesso no curso.
+                      Site onde o edital é disponibilizado
+                      </p>
+                        <button id="clBtn">Fechar</button>
+                      </dialog>
       </div>
+      
       <div>
-        <img src="src/assets/img/b.png" alt="exemplo3" />
-        <h3>Exemplo 3</h3>
+        <img src="src/assets/img/PROAE.png" alt=" PROAE" />
+        <h3>PROAE</h3>
         <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
+          Em busca de incluir e atender o dia a dia de seus discentes, a UFBA oferece auxilios e bolsas com modalidades diversas a fim de atender diferentes necessidades que ajudem o discente a finalizar a graduação.
         </p>
+        <!---POPUP-PROAE-->
+                        <button id="opBt">PROAE+</button>
+
+                        <dialog id="popupProae">
+                          <h1>Proae</h1>
+                          <p> Pró-Reitoria de Ações Afirmativas e Assistência Estudantil (Proae), 
+                            oferta Alguns programas de assistência aos estudantes que estão em situação de 
+                            vulnerabilidade social, e são cadastrados  no  cadastro Geral do PROAE.
+                            Alguns dos programas ofertados são :
+                        <ul>
+                            <li>Auxílio Alimentação</li>
+                            <li>Auxílio Moradia (Residência Universitária ou ajuda de custo)</li>
+                            <li>Auxílio Permanência</li>
+                            <li>Auxílio Transporte</li>
+                            <li>Creche UFBA</li>
+                            <li> Auxílio Acolhimento, entre outros</li>
+                        </ul>
+                        
+                        <p>Todo inicio de semestre a Proae abre as incrisções para o cadastro geral,
+                        Acesse o site PROAE e saiba mais!</p>
+                        
+                        </p>
+                          <button id="clsBoton">Fechar</button>
+                        </dialog>
+                
       </div>
-      <div>
-        <img src="src/assets/img/a.png" alt="exemplo4" />
-        <h3>Exemplo 4</h3>
-        <p>
-          Informática é uma área de informação digital, que inclui os processos
-          de recolha, armazenamento, processamento, transferência e difusão de
-          dados.
-        </p>
-      </div>
+              <div>
+                <img src="src/assets/img/Ru.png" alt=" Restaurante Universitario" />
+                <h3>Restaurante Universario</h3>
+                <p>
+                  A Ufba oferece o Restaurante Universario disponibilizando alimentação saudavel e balanceada 
+                  para todos os alunos.
+                </p>
+                            <button id="opBton">RU+</button>
+
+                            <dialog id="popupRu">
+                              <h1>RU</h1>
+                              <p>A Universidade Federal da Bahia (UFBA) possui o Restaurante Universitário (RU)
+                                 que oferece refeições completas por um preço simbólico de R$2,50 para Alunos pagantes,
+                                  entretando atraves do Proae, alunos que  se enquadram nas especificações detalhadas no 
+                                  site do Proae, tem acesso a duas refeições diarias (Almoço /janta) no Restaurante universitario
+                                   de forma Gratuita. O RU  oferece uma refeição balanceada com opções diversas de proteínas, carboidratos,
+                                    saladas e sobremesas. 
+                                </p>
+                                  <button id="clBton">Fechar</button>
+                                </dialog>
+
+              </div>
     </section>
 
     <section id="grade">
       <h2>Grade Curricular</h2>
-      <img src="src/assets/img/ceu.jpg" alt="ceu" />
-      <img src="src/assets/img/grama.jpg" alt="grama" />
-      <img src="src/assets/img/montanha.jpg" alt="montanha" />
-      <img src="src/assets/img/mar.jpg" alt="mar" />
-      <img src="src/assets/img/arvores.jpg" alt="arvores" />
-      <img src="src/assets/img/ponte.jpg" alt="ponte" />
+      <img src="src/assets/img/disciplina.png" alt="grade" />
     </section>
-
     <section id="contato">
-      <h2>Contato</h2>
-      <p>Principais canais de comunicação</p>
+      <h2>Principais canais de cominicação</h2>
+
       <div>
-        <img src="src/assets/img/d.png" alt="tel" />
-        <p><a href="tel:000000000">(71) 0000-0000</a></p>
-      </div>
-      <div>
-        <img src="src/assets/img/d.png" alt="email" />
+        <img
+          src="src/assets/img/mail.png"
+          width="62px"
+          height="62px"
+          alt="tel"
+        />
         <p>
-          Contratos e dúvidas com estágio:
-          <a href="mailto:estagio.ihac@gmail.com">estagio.ihac@gmail.com</a>
+          Coordenação Acadêmica
+          <a href="coordena.ihac@ufba.br">coordena.ihac@ufba.br</a>
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="src/assets/img/mail.png"
+          width="62px"
+          height="62px"
+          alt="tel"
+        />
+        <p>
+          Atendimento do Colegiado
+          <a href="coordena.ihac@ufba.br">sig.ihac@ufba.br</a>
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="src/assets/img/mail.png"
+          width="61px"
+          height="62px"
+          alt="email"
+        />
+        <p>
+          Dúvidas com estágio:
+          <a href="estagio.ihac@gmail.com">estagio.ihac@gmail.com</a>
         </p>
       </div>
     </section>
-
     <footer>
       <a href="#topo">VOLTAR</a>
-      <p>Desenvolvido por Fulano de Tal</p>
+      <p>
+        Desenvolvido pela turma de comtemporaineidade I <br />
+        Docente: Gracielle Tavares 2023.1
+      </p>
     </footer>
-
-    <script src="src/js/script.js" defer></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

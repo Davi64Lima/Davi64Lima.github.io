@@ -1,6 +1,6 @@
 :root {
   --cor0: #fff;
-  --cor1: #acc8d7;
+  --cor1: #cdf8aa;
   --cor2: #608334;
   --cor3: #97b770;
   --cor4: #365563;
@@ -9,11 +9,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
   font-family: nunito, sans-serif;
   color: var(--cor5);
 }
@@ -30,6 +25,52 @@ h3 {
   background-color: var(--cor4);
   font-size: 0.9em;
   border-radius: 3px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cor3);
+}
+nav a {
+  text-decoration: none;
+  color: var(--cor0);
+  font-weight: 800;
+  font-size: 16px;
+  font-family: yeloowtail, sans-serif;
+  margin-top: 0%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 0%;
+}
+nav ul li {
+  text-align: center;
+  width: 30%;
+  margin-top: 0%;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 30px;
+  width: 100%;
+  text-decoration: none;
+  color: var(--cor0);
+  margin-top: 0%;
+}
+nav ul li a:hover {
+  background-color: var(--cor1);
+  color: var(--cor2);
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 0%;
 }
 
 header {
@@ -110,65 +151,6 @@ header {
   outline: none;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--cor3);
-}
-nav a {
-  text-decoration: none;
-  color: var(--cor0);
-  font-weight: 800;
-  font-size: 16px;
-  font-family: yeloowtail, sans-serif;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-nav ul li {
-  text-align: center;
-  width: 30%;
-}
-nav ul li a {
-  display: inline-block;
-  padding: 10px 0;
-  width: 100%;
-  text-decoration: none;
-  color: var(--cor0);
-}
-nav > ul li a:hover {
-  background-color: var(--cor1);
-  color: var(--cor2);
-  height: 100%;
-  text-align: center;
-}
-
-.slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: var(--cor0);
-  text-align: center;
-  padding: 15px;
-}
-
-header h1 {
-  color: var(--cor0);
-}
-header p {
-  margin-bottom: 2em;
-}
-
 #sobre {
   display: flex;
   flex-direction: column;
@@ -177,7 +159,6 @@ header p {
   padding: 10px 10px 20px 20px;
   background-color: var(--cor4);
   color: var(--cor0);
-  padding-top: 100px;
 }
 
 #sobre h2 {
@@ -219,6 +200,13 @@ header p {
   width: 100%;
 }
 
+#perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
 #contato {
   display: flex;
   flex-direction: column;
@@ -229,6 +217,134 @@ header p {
   color: var(--cor6);
 }
 
+/* pop-up INTERCAMBIO*/
+#popupInter {
+  width: 500px;
+  padding: 40px;
+  background-color: var(--cor0);
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid var(--cor0);
+  width: 80%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--cor2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: var(--cor3);
+}
+
+/*POP-UP PROFIC*/
+#popupProfici {
+  width: 500px;
+  padding: 40px;
+  background-color: var(--cor0);
+  border: 1px solid var(--cor0);
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--cor2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: var(--cor3);
+}
+/*Pop-up PROAE*/
+#popupProae {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+#popupProae > p {
+  text-align: justify;
+}
+#popupProae > ul {
+  text-align: justify;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #439946;
+}
+/*pop-up RU*/
+#popupRu {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--cor2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: var(--cor3);
+}
+img {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+img:hover {
+  -webkit-transform: scale(1.25); /* Safari and Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* IE 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+}
 footer {
   text-align: center;
   padding: 10px;
@@ -244,7 +360,6 @@ footer a {
 @media screen and (min-width: 768px) {
   nav {
     flex-direction: row;
-    justify-content: space-around;
   }
   nav ul {
     flex-direction: row;
@@ -284,11 +399,12 @@ footer a {
   #grade img {
     width: 33.3333333%;
   }
+
   #contato {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
   }
   #contato h2,
