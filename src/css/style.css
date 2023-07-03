@@ -228,7 +228,9 @@ header {
   width: 80%;
   border-radius: 10px;
 }
-
+#popupInter p{
+  text-align: justify;
+}
 button {
   background-color: var(--cor2);
   border: none;
@@ -255,7 +257,9 @@ button:hover {
   border-radius: 10px;
   text-align: center;
 }
-
+#popupProfici > p {
+  text-align: justify;
+}
 button {
   background-color: var(--cor2);
   border: none;
@@ -312,6 +316,9 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   text-align: center;
+}
+#popupRu > p{
+  text-align: justify;
 }
 
 button {
@@ -398,6 +405,9 @@ footer a {
   }
   #grade img {
     width: 33.3333333%;
+  }
+  #grade > ul li{
+
   }
 
   #contato {
