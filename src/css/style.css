@@ -76,18 +76,19 @@ nav ul li a:hover {
 header {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  
   z-index: 1;
 }
 
 .slider {
   margin: 0 auto;
-  width: auto;
-  height: 280px;
+  width: 100%;
+  height: 639px;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
   align-items: center;
+  
 }
 
 .slider img {
@@ -137,7 +138,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 20px;
+  padding: 10px;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -159,6 +160,7 @@ header {
   padding: 10px 10px 20px 20px;
   background-color: var(--cor4);
   color: var(--cor0);
+  margin-top: 20px;
 }
 
 #sobre h2 {
@@ -167,6 +169,7 @@ header {
 #sobre p {
   margin-bottom: 2.5em;
   max-width: 1000px;
+  text-align: justify;
 }
 #sobre.botao {
   background-color: var(--cor0);
@@ -291,7 +294,20 @@ button:hover {
 #popupProae > ul {
   text-align: justify;
 }
-
+#Sd{
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+#Sd> p{
+  text-align: justify;
+}
+#Sd> ul{
+  text-align: justify;
+}
 button {
   background-color: #4caf50;
   border: none;
@@ -337,6 +353,38 @@ button {
 button:hover {
   background-color: var(--cor3);
 }
+#buzufba > h2{
+  text-align: center;
+  width: 100%;
+}
+.conteiner >img{
+ display: flex;
+ margin-left: 20%;
+ justify-content: center;
+ min-width: 30%;
+
+
+ 
+}
+.conteiner> p{
+  display: flex;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 20%;
+  max-width: 90%;
+
+  
+}
+.conteiner{
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
 img {
   -webkit-transition: all 1s ease; /* Safari and Chrome */
   -moz-transition: all 1s ease; /* Firefox */
@@ -398,6 +446,12 @@ footer a {
   #grade {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 90%;
+  justify-content: center;
+  text-align: center;
+  
+    
+margin: 0 auto;
   }
   #grade h2 {
     width: 100%;

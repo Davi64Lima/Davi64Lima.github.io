@@ -99,3 +99,14 @@ opBt.addEventListener("click", function () {
 clsBoton.addEventListener("click", function () {
   popupProae.close();
 });
+/*Saude*/
+const abrir = document.getElementById("abrir");
+const  fechar =document.getElementById("fechar");
+const Sd= document.getElementById("Sd");
+
+abrir.addEventListener("click", function(){
+  Sd.showModal();
+})
+fechar.addEventListener("click", function(){
+Sd.close();
+})
